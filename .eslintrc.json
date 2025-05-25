@@ -1,0 +1,27 @@
+{
+  "root": false,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "no-html-link-for-pages": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "next": {
+      "rootDir": "./renderer"
+    }
+  },
+  "plugins": ["prettier", "@typescript-eslint", "tailwindcss"]
+}
