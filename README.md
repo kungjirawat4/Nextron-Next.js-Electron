@@ -1,4 +1,4 @@
-
+<h1 align="center"><a href="https://github.com/MaximePremont/boilerplate-nextron-shadcn">Prototype : Maxime PREMONT</a></h1>
 **Then, install depedencies by running `npm install`,`yarn install` in the project folder.**
 ## Usage
 ### Run Next ( web application ) in dev mode :
