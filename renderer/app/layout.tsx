@@ -4,6 +4,7 @@ import '@/styles/globals.css'
 
 import { Metadata } from 'next'
 import ThemeProvider from '@/components/providers/theme-provider'
+import { Toaster } from 'sonner'
 
 
 
@@ -23,13 +24,20 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning>
       <body>
+        <Toaster
+          richColors={true}
+          visibleToasts={1}
+          expand={false}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
           {children}
+
         </ThemeProvider>
+
       </body>
     </html>
   )
